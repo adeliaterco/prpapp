@@ -396,10 +396,10 @@ const Dashboard = () => {
           isOpen={purchaseModal.isOpen}
           onClose={() => setPurchaseModal(null)}
           moduleNumber={purchaseModal.module}
-          title={purchaseModal.module === 2 ? 'Protocolo de Dominancia' : 'Blindaje Emocional'}
+          title={purchaseModal.module === 2 ? 'Protocolo 89: Scripts Exactos' : 'Blindaje Emocional'}
           description={
             purchaseModal.module === 2
-              ? 'Técnicas avanzadas que funcionan en 95% de casos'
+              ? 'Scripts Exactos Para Reconquistarla'
               : 'Cómo mantener la obsesión por 30 días'
           }
           price={purchaseModal.module === 2 ? '$17' : '$37'}
