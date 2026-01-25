@@ -282,7 +282,7 @@ const Dashboard = () => {
 
   const testimonials = [
     { 
-      text: 'El Módulo 1 me dio esperanza, pero el Protocolo de Dominancia cambió todo. Ella ahora me busca a mí.', 
+      text: 'El Módulo 1 me dio esperanza, pero el Protocolo 89 cambió todo. Ella ahora me busca a mí.', 
       author: 'Juan M.',
       highlight: 'Protocolo de Dominancia'
     },
