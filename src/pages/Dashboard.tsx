@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 interface ModulePurchaseModalProps {
   isOpen: boolean;
   onClose: () => void;
-  moduleNumber: 2 | 3;
+  moduleNumber: 2; // ✂️ REMOVIDO: | 3
   title: string;
   description: string;
   price: string;
@@ -19,7 +19,7 @@ interface ModulePurchaseModalProps {
 
 const HOTMART_LINKS = {
   2: 'https://pay.hotmart.com/D100233207O?off=hgjszxx1',
-  3: 'https://pay.hotmart.com/N100448107A?off=fh6ck4c7',
+  // ✂️ REMOVIDO: 3: 'https://pay.hotmart.com/N100448107A?off=fh6ck4c7',
 };
 
 const ModulePurchaseModal = ({ isOpen, onClose, moduleNumber, title, description, price }: ModulePurchaseModalProps) => {
@@ -210,7 +210,7 @@ const ModuleCard = ({
 const Dashboard = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(getUser());
-  const [purchaseModal, setPurchaseModal] = useState<{ isOpen: boolean; module: 2 | 3 } | null>(null);
+  const [purchaseModal, setPurchaseModal] = useState<{ isOpen: boolean; module: 2 } | null>(null); // ✂️ REMOVIDO: | 3
 
   useEffect(() => {
     if (!isAuthenticated()) {
@@ -244,15 +244,7 @@ const Dashboard = () => {
       socialProof: { buyers: 15, successRate: 97 },
       icon: <ShieldCheck className="w-7 h-7" />,
     },
-    {
-      number: 3,
-      title: 'Blindaje Emocional',
-      description: 'Cómo mantener la obsesión por 30 días. Incluye acceso a comunidad exclusiva.',
-      isUnlocked: user.modulo_3_liberado,
-      price: '$37',
-      socialProof: { buyers: 12, successRate: 98 },
-      icon: <Lock className="w-7 h-7" />,
-    },
+    // ✂️ REMOVIDO: Módulo 3 (Blindaje Emocional) completo
   ];
 
   const handleModuleClick = (moduleNumber: number) => {
@@ -264,20 +256,15 @@ const Dashboard = () => {
       } else {
         setPurchaseModal({ isOpen: true, module: 2 });
       }
-    } else if (moduleNumber === 3) {
-      if (user.modulo_3_liberado) {
-        navigate('/modulo3');
-      } else {
-        setPurchaseModal({ isOpen: true, module: 3 });
-      }
     }
+    // ✂️ REMOVIDO: Lógica completa do módulo 3
   };
 
   const features = [
     '7 lecciones por módulo',
     'Contenido científico y probado',
     'Acceso de por vida',
-    'Comunidad exclusiva (Módulo 3)',
+    // ✂️ REMOVIDO: 'Comunidad exclusiva (Módulo 3)',
   ];
 
   const testimonials = [
@@ -286,16 +273,8 @@ const Dashboard = () => {
       author: 'Juan M.',
       highlight: 'Protocolo de Dominancia'
     },
-    { 
-      text: 'Reconquisté con el Módulo 1, pero casi la pierdo de nuevo. El Blindaje Emocional salvó mi relación.', 
-      author: 'Carlos R.',
-      highlight: 'Blindaje Emocional'
-    },
-    { 
-      text: 'Hice los 3 módulos. Sin el Protocolo y el Blindaje, hubiera sido solo una reconciliación temporal.', 
-      author: 'Roberto P.',
-      highlight: 'Los 3 módulos'
-    },
+    // ✂️ REMOVIDO: Testemunho sobre Blindaje Emocional (Carlos R.)
+    // ✂️ REMOVIDO: Testemunho sobre "los 3 módulos" (Roberto P.)
   ];
 
   return (
@@ -396,13 +375,9 @@ const Dashboard = () => {
           isOpen={purchaseModal.isOpen}
           onClose={() => setPurchaseModal(null)}
           moduleNumber={purchaseModal.module}
-          title={purchaseModal.module === 2 ? 'Protocolo 89: Scripts Exactos' : 'Blindaje Emocional'}
-          description={
-            purchaseModal.module === 2
-              ? 'Scripts Exactos Para Reconquistarla'
-              : 'Cómo mantener la obsesión por 30 días'
-          }
-          price={purchaseModal.module === 2 ? '$17' : '$37'}
+          title="Protocolo 89: Scripts Exactos" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
+          description="Scripts Exactos Para Reconquistarla" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
+          price="$17" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
         />
       )}
     </div>
