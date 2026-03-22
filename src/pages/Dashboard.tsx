@@ -237,8 +237,8 @@ const Dashboard = () => {
     },
     {
       number: 2,
-      title: '',
-      description: 'Protocolo 89 + Acompañamiento',
+      title: 'Protocolo 89 + Acompañamiento',
+      description: 'Para Reconquistarla',
       isUnlocked: user.modulo_2_liberado,
       price: '$17',
       socialProof: { buyers: 15, successRate: 97 },
