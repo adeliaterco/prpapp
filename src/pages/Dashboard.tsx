@@ -375,8 +375,8 @@ const Dashboard = () => {
           isOpen={purchaseModal.isOpen}
           onClose={() => setPurchaseModal(null)}
           moduleNumber={purchaseModal.module}
-          title="Protocolo 89: Scripts Exactos" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
-          description="Scripts Exactos Para Reconquistarla" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
+          title="Desbloquear Acompañamiento" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
+          description="Con la especialista: CERO margen de error" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
           price="$17" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
         />
       )}
