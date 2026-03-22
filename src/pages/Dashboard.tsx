@@ -269,9 +269,9 @@ const Dashboard = () => {
 
   const testimonials = [
     { 
-      text: 'El Módulo 1 me dio esperanza, pero el Protocolo 89 cambió todo. Ella ahora me busca a mí.', 
+      text: 'El Módulo 1 me dio esperanza, pero el Módulo 2 cambió todo. Ella ahora me busca a mí.', 
       author: 'Juan M.',
-      highlight: 'Protocolo de Dominancia'
+      highlight: 'Acompañamiento'
     },
     // ✂️ REMOVIDO: Testemunho sobre Blindaje Emocional (Carlos R.)
     // ✂️ REMOVIDO: Testemunho sobre "los 3 módulos" (Roberto P.)
