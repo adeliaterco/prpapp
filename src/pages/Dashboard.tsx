@@ -59,7 +59,7 @@ const ModulePurchaseModal = ({ isOpen, onClose, moduleNumber, title, description
 
           <div className="bg-muted/50 rounded-xl p-4 mb-6">
             <p className="text-3xl font-bold text-primary">{price}</p>
-            <p className="text-sm text-muted-foreground">Acceso de por vida</p>
+            <p className="text-sm text-muted-foreground">Resultado: Tú no improvises. Tú ejecutas con seguridad.</p>
           </div>
 
           <div className="space-y-3">
@@ -165,7 +165,7 @@ const ModuleCard = ({
         <div className="mt-4 flex items-center justify-between">
           <div>
             <p className="text-2xl font-bold text-primary">{price}</p>
-            <p className="text-xs text-muted-foreground">Acceso de por vida</p>
+            <p className="text-xs text-muted-foreground">Resultado: Tú no improvises. Tú ejecutas con seguridad.</p>
           </div>
         </div>
       )}
@@ -263,7 +263,7 @@ const Dashboard = () => {
   const features = [
     '7 lecciones por módulo',
     'Contenido científico y probado',
-    'Acceso de por vida',
+    'Resultado: Tú no improvises. Tú ejecutas con seguridad.',
     // ✂️ REMOVIDO: 'Comunidad exclusiva (Módulo 3)',
   ];
 
