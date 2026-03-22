@@ -237,8 +237,8 @@ const Dashboard = () => {
     },
     {
       number: 2,
-      title: 'Protocolo 89: Scripts Exactos',
-      description: 'Scripts Exactos Para Reconquistarla',
+      title: '',
+      description: 'Protocolo 89 + Acompañamiento',
       isUnlocked: user.modulo_2_liberado,
       price: '$17',
       socialProof: { buyers: 15, successRate: 97 },
