@@ -263,7 +263,7 @@ const Dashboard = () => {
   const features = [
     '7 lecciones por módulo',
     'Contenido científico y probado',
-    'Resultado: Tú no improvises. Tú ejecutas con seguridad.',
+    'Garantía total',
     // ✂️ REMOVIDO: 'Comunidad exclusiva (Módulo 3)',
   ];
 
