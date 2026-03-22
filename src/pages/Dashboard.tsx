@@ -240,7 +240,7 @@ const Dashboard = () => {
       title: 'NO LO HAGAS SOLO',
       description: 'No es más contenido. Es alguien a tu lado diciendo EXACTAMENTE qué hacer en cada momento.',
       isUnlocked: user.modulo_2_liberado,
-      price: '$17',
+      price: 'Análisis de tu caso',
       socialProof: { buyers: 15, successRate: 97 },
       icon: <ShieldCheck className="w-7 h-7" />,
     },
@@ -377,7 +377,7 @@ const Dashboard = () => {
           moduleNumber={purchaseModal.module}
           title="Desbloquear Acompañamiento" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
           description="Con la especialista: CERO margen de error" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
-          price="$17" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
+          price="Análisis de tu caso" // ✂️ SIMPLIFICADO: Removido ternário do módulo 3
         />
       )}
     </div>
