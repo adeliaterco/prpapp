@@ -9,7 +9,7 @@ interface Module3UpsellModalProps {
 
 const Module3UpsellModal = ({ isOpen, onClose }: Module3UpsellModalProps) => {
   const handlePurchase = () => {
-    window.open('https://pay.hotmart.com/N100448107A?off=fh6ck4c7', '_blank');
+    window.open('', '_blank');
   };
 
   return (

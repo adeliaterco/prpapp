@@ -18,7 +18,7 @@ interface ModulePurchaseModalProps {
 }
 
 const HOTMART_LINKS = {
-  2: 'https://pay.hotmart.com/D100233207O?off=hgjszxx1',
+  2: '',
   // ✂️ REMOVIDO: 3: 'https://pay.hotmart.com/N100448107A?off=fh6ck4c7',
 };
 
